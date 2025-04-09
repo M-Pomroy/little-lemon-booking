@@ -1,0 +1,14 @@
+.header {
+  padding: 5px;
+}
+
+.header img {
+  flex: 0 0 auto;
+  width: 215px;
+}
+
+.header-wrap {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+}
