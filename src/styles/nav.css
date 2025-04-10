@@ -1,9 +1,12 @@
 .nav {
-  margin: auto;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  margin-left: auto;
 }
 
 .nav-list {
-  display: flex;
+  display: none;
   flex-flow: row;
   gap: 20px;
   list-style: none;
@@ -30,4 +33,35 @@
 
 .nav-list a:hover::after {
   width: 100%;
+}
+
+.nav-btn {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  appearance: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.nav-btn img {
+  width: 30px;
+}
+
+@media screen and (min-width: 760px) {
+  .nav {
+    margin: auto;
+  }
+
+  .nav-btn {
+    display: none;
+  }
+
+  .nav-list {
+    display: flex;
+  }
 }

@@ -1,8 +1,12 @@
+import hamburger from "../assets/hamburger.svg";
 import "../styles/nav.css";
 
 function Nav() {
   return (
     <nav className="nav">
+      <button type="button" className="nav-btn" aria-label="Click to open menu">
+        <img src={hamburger} alt="Hamburger icon" />
+      </button>
       <ul className="nav-list">
         <li>
           <a href="/">Home</a>
