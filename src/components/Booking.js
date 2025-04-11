@@ -1,21 +1,14 @@
 import Hero from "./Hero";
+import Testimonials from "./Testimonials";
+import About from "./About";
 
 const Booking = () => {
   return (
     <>
       <Hero />
-      <section className="section">
-        <div className="section-wrap">
-          {/*<form className="container container--960 form-layout">
-            <label></label>
-            <input />
-            <button type="submit" className="btn">
-              Next
-            </button>
-          </form>*/}
-          <div className="booking-info"></div>
-        </div>
-      </section>
+      <section className="section"></section>
+      <Testimonials />
+      <About />
     </>
   );
 };
