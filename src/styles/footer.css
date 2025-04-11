@@ -43,7 +43,8 @@
   opacity: 1;
 }
 
-.footer-menu h3 {
+.footer-menu h2 {
+  color: #fff;
   text-align: center;
 }
 
@@ -70,7 +71,7 @@
     align-items: flex-start;
   }
 
-  .footer-menu h3 {
+  .footer-menu h2 {
     text-align: left;
   }
 }

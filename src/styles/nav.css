@@ -35,6 +35,28 @@
   width: 100%;
 }
 
+.nav-link {
+  position: relative;
+  color: #000;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 0;
+  height: 2px;
+  background-color: #000;
+  transition: all linear 200ms;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
 .nav-btn {
   display: flex;
   flex-flow: row;

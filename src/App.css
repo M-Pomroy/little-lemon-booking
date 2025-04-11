@@ -21,8 +21,8 @@ h2 {
 }
 
 h3 {
-  color: #fff;
-  font-size: 40px;
+  color: #000;
+  font-size: 24px;
 }
 
 .subtitle {
@@ -45,17 +45,21 @@ h3 {
   max-width: 900px;
 }
 
+button {
+  font-family: "karla", sans-serif;
+  border: none;
+  appearance: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
 .btn {
   width: 200px;
   color: #000;
   font-size: 18px;
   font-weight: 500;
   text-align: center;
-  font-family: "karla", sans-serif;
   background-color: #f4ce14;
-  border: none;
   border-radius: 16px;
-  appearance: none;
   padding: 20px 10px;
-  cursor: pointer;
 }

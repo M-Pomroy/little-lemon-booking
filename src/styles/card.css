@@ -1,0 +1,50 @@
+.card {
+  display: flex;
+  flex-flow: column;
+  border-radius: 16px 16px 0 0;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  aspect-ratio: 265 / 185;
+}
+
+.card-body {
+  background-color: #edefee;
+  padding: 10px;
+}
+
+.card-body p {
+  color: #495e57;
+  font-size: 16px;
+}
+
+.card-heading {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-price {
+  color: #ee9972;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.order-btn {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  gap: 10px;
+  color: #000;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "karla", sans-serif;
+  padding: 0;
+}
+
+.order-btn img {
+  width: 17px;
+}

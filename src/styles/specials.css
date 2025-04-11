@@ -1,0 +1,34 @@
+.specials-heading {
+  display: flex;
+  flex-flow: column;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.specials-wrap {
+  display: flex;
+  flex-flow: column;
+  gap: 10px;
+}
+
+.specials-wrap .card {
+  flex: 1 1 auto;
+}
+
+@media screen and (max-width: 599px) {
+  .specials-heading .btn {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .specials-heading {
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .specials-wrap {
+    flex-flow: row;
+  }
+}

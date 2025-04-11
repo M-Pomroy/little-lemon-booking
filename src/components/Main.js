@@ -1,26 +1,18 @@
 import "../styles/main.css";
+//import Booking from "./Booking";
+import Homepage from "./Homepage";
+//import { Routes, Route } from "react-router-dom";
 
-function Main() {
+const Main = () => {
   return (
     <>
-      <section
-        className="hero"
-        style={{ padding: "50px", background: "#495e57" }}
-      ></section>
-      <section className="section">
-        <div className="section-wrap">
-          {/*<form className="container container--960 form-layout">
-            <label></label>
-            <input />
-            <button type="submit" className="btn">
-              Next
-            </button>
-          </form>*/}
-          <div className="booking-info"></div>
-        </div>
-      </section>
+      {/*<Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/booking" element={<Booking />} />
+      </Routes>*/}
+      <Homepage />
     </>
   );
-}
+};
 
 export default Main;

@@ -8,7 +8,7 @@ const Footer = () => {
         <img src={logo} alt="Little Lemon logo" />
         <div className="footer-menu-wrap">
           <nav className="footer-menu">
-            <h3>Doormat Navigation</h3>
+            <h2>Doormat Navigation</h2>
             <ul>
               <li>
                 <a href="/">Home</a>
@@ -31,7 +31,7 @@ const Footer = () => {
             </ul>
           </nav>
           <nav className="footer-menu">
-            <h3>Contact</h3>
+            <h2>Contact</h2>
             <ul>
               <li>
                 <a href="tel:01265447852">+44 (0) 1265 447 852</a>
