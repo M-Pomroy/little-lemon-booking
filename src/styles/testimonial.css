@@ -1,0 +1,24 @@
+.testimonial {
+  display: flex;
+  flex-flow: column;
+  gap: 10px;
+  background-color: #fff;
+  padding: 10px;
+}
+
+.testimonial p {
+  margin: 0;
+}
+
+.testimonial-author {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.testimonial-author img {
+  width: 50px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
