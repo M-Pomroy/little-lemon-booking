@@ -10,6 +10,10 @@
   background: #f4ce14;
 }
 
+.section-margin-top {
+  margin-top: 10px;
+}
+
 @media screen and (min-width: 600px) {
   .section {
     padding: 25px;

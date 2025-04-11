@@ -1,0 +1,9 @@
+.booking-wrap {
+  display: flex;
+  flex-flow: column;
+  gap: 10px;
+}
+
+.booking-wrap h2 {
+  text-align: center;
+}
