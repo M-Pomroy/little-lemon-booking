@@ -1,9 +1,61 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.subtitle {
+  font-family: "Markazi Text", serif;
+  margin: 0;
+}
+
+h1 {
+  color: #f4ce14;
+  font-size: 64px;
+  font-weight: 500;
+}
+
+h2 {
+  color: #000;
+  font-size: 40px;
+}
+
+h3 {
+  color: #fff;
+  font-size: 40px;
+}
+
+.subtitle {
+  color: #fff;
+  font-size: 40px;
+  margin-top: -30px;
+}
+
 .container {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
 }
 
+.container--860 {
+  max-width: 860px;
+}
+
 .container--960 {
   max-width: 900px;
+}
+
+.btn {
+  width: 200px;
+  color: #000;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  font-family: "karla", sans-serif;
+  background-color: #f4ce14;
+  border: none;
+  border-radius: 16px;
+  appearance: none;
+  padding: 20px 10px;
+  cursor: pointer;
 }
