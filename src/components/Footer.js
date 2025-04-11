@@ -1,7 +1,7 @@
 import logo from "../assets/logo-footer.svg";
 import "../styles/footer.css";
 
-function Footer() {
+const Footer = () => {
   return (
     <footer className="footer">
       <div className="container footer-wrap">
@@ -47,6 +47,6 @@ function Footer() {
       </div>
     </footer>
   );
-}
+};
 
 export default Footer;

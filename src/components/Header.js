@@ -2,7 +2,7 @@ import logo from "../assets/logo.svg";
 import Nav from "./Nav";
 import "../styles/header.css";
 
-function Header() {
+const Header = () => {
   return (
     <header className="header">
       <div className="container header-wrap">
@@ -11,6 +11,6 @@ function Header() {
       </div>
     </header>
   );
-}
+};
 
 export default Header;
