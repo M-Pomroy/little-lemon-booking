@@ -34,6 +34,7 @@
 }
 
 .order-btn {
+  position: relative;
   display: flex;
   flex-flow: row;
   align-items: center;
@@ -47,4 +48,19 @@
 
 .order-btn img {
   width: 17px;
+}
+
+.order-btn::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 0;
+  height: 2px;
+  background-color: #000;
+  transition: all linear 200ms;
+}
+
+.order-btn:hover::after {
+  width: 100%;
 }

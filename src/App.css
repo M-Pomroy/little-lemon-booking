@@ -93,6 +93,11 @@ button {
   background-color: #f4ce14;
   border-radius: 16px;
   padding: 20px;
+  transition: all 200ms linear;
+}
+
+.btn:hover {
+  background-color: #ee9972;
 }
 
 .btn:disabled {
