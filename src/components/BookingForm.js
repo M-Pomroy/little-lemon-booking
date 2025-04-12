@@ -1,6 +1,10 @@
 import "../styles/booking-form.css";
 import { useState } from "react";
 
+const submitAPI = function (formData) {
+  return true;
+};
+
 const BookingForm = (props) => {
   const [formValues, setFormValues] = useState({
     resDate: "",
@@ -9,8 +13,8 @@ const BookingForm = (props) => {
     occasion: "",
   });
 
-  const handleTimes = () => {
-    return props.dispatch();
+  const handleTimes = (date) => {
+    return props.dispatch(date);
   };
 
   return (
@@ -25,8 +29,9 @@ const BookingForm = (props) => {
             name="resDate"
             value={formValues.resDate}
             onChange={(e) => {
-              setFormValues({ ...formValues, resDate: e.target.value });
-              handleTimes();
+              const value = e.target.value;
+              setFormValues({ ...formValues, resDate: value });
+              handleTimes(value);
             }}
           />
 
@@ -39,7 +44,7 @@ const BookingForm = (props) => {
             }
           >
             {props.times.map((time) => {
-              return <option>{time}</option>;
+              return <option key={time}>{time}</option>;
             })}
           </select>
 
