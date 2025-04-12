@@ -94,3 +94,20 @@ button {
   border-radius: 16px;
   padding: 20px;
 }
+
+.btn:disabled {
+  position: relative;
+  cursor: not-allowed;
+}
+
+.btn:disabled::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #eee;
+  border-radius: 16px;
+  opacity: 0.3;
+}
