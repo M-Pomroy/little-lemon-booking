@@ -77,7 +77,8 @@ const BookingForm = (props) => {
     return props.dispatch(date);
   };
 
-  const handleSubmit = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
     setSubmitSuccess(props.submitAPI(formValues));
   };
 
@@ -85,7 +86,7 @@ const BookingForm = (props) => {
     <section className="section section-margin-top">
       <div className="container container--530 booking-wrap">
         <h2>Booking a table</h2>
-        <form className="form" onSubmit={handleSubmit}>
+        <form className="form" onSubmit={handleSubmit} role="form">
           <label htmlFor="resDate">Choose date</label>
           <input
             type="date"
@@ -113,7 +114,7 @@ const BookingForm = (props) => {
             })}
           </select>
 
-          <label htmlFor="guests">Number of quests</label>
+          <label htmlFor="guests">Number of guests</label>
           <input
             type="number"
             value={formValues.guests}
@@ -142,7 +143,12 @@ const BookingForm = (props) => {
             <option value="anniversary">Anniversary</option>
           </select>
 
-          <button type="submit" className="btn" disabled={!canSubmit}>
+          <button
+            type="submit"
+            className="btn"
+            disabled={!canSubmit}
+            onSubmit={() => {}}
+          >
             Make your reservation
           </button>
         </form>
