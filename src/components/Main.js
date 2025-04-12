@@ -1,8 +1,15 @@
 import "../styles/main.css";
 import Booking from "./Booking";
 import Homepage from "./Homepage";
+import AboutPage from "./AboutPage";
+import MenuPage from "./MenuPage";
+import BookingConfirmation from "./BookingConfirmation";
 import { Routes, Route } from "react-router-dom";
 import { useReducer } from "react";
+
+const submitAPI = function (formData) {
+  return true;
+};
 
 const timesReducer = (state, action) => {
   let date = new Date(action);
@@ -42,10 +49,19 @@ const Main = () => {
   return (
     <Routes>
       <Route path="/" element={<Homepage />} />
+      <Route path="/about" element={<AboutPage />} />
+      <Route path="/menu" element={<MenuPage />} />
       <Route
         path="/booking"
-        element={<Booking times={availableTimes} dispatch={dispatch} />}
+        element={
+          <Booking
+            times={availableTimes}
+            dispatch={dispatch}
+            submitAPI={submitAPI}
+          />
+        }
       />
+      <Route path="/booking-confirmed" element={<BookingConfirmation />} />
     </Routes>
   );
 };

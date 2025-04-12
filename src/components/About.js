@@ -2,9 +2,9 @@ import "../styles/about.css";
 import mario_adrian from "../assets/mario-adrian.jpg";
 import fish from "../assets/fish.jpg";
 
-const About = () => {
+const About = ({ margin = false }) => {
   return (
-    <section className="section">
+    <section className={`section ${margin ? "section-margin-top" : ""} `}>
       <div className="container container--860 about-wrap">
         <div className="about-text">
           <h2>Little Lemon</h2>

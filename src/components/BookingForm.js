@@ -1,11 +1,9 @@
 import "../styles/booking-form.css";
-import { useState } from "react";
-
-const submitAPI = function (formData) {
-  return true;
-};
+import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 const BookingForm = (props) => {
+  const [submitSuccess, setSubmitSuccess] = useState(false);
   const [formValues, setFormValues] = useState({
     resDate: "",
     resTime: "",
@@ -13,15 +11,26 @@ const BookingForm = (props) => {
     occasion: "",
   });
 
+  const navigate = useNavigate();
+  useEffect(() => {
+    if (submitSuccess) {
+      navigate("/booking-confirmed");
+    }
+  }, [submitSuccess, navigate]);
+
   const handleTimes = (date) => {
     return props.dispatch(date);
+  };
+
+  const handleSubmit = () => {
+    setSubmitSuccess(props.submitAPI(formValues));
   };
 
   return (
     <section className="section section-margin-top">
       <div className="container container--530 booking-wrap">
         <h2>Booking a table</h2>
-        <form className="form">
+        <form className="form" onSubmit={handleSubmit}>
           <label htmlFor="resDate">Choose date</label>
           <input
             type="date"
@@ -33,6 +42,7 @@ const BookingForm = (props) => {
               setFormValues({ ...formValues, resDate: value });
               handleTimes(value);
             }}
+            required
           />
 
           <label htmlFor="resTime">Choose time</label>
@@ -42,6 +52,7 @@ const BookingForm = (props) => {
             onChange={(e) =>
               setFormValues({ ...formValues, resTime: e.target.value })
             }
+            required
           >
             {props.times.map((time) => {
               return <option key={time}>{time}</option>;
@@ -59,6 +70,7 @@ const BookingForm = (props) => {
             onChange={(e) =>
               setFormValues({ ...formValues, guests: e.target.value })
             }
+            required
           />
 
           <label htmlFor="occasion">Occasion</label>
@@ -69,6 +81,7 @@ const BookingForm = (props) => {
             onChange={(e) =>
               setFormValues({ ...formValues, occasion: e.target.value })
             }
+            required
           >
             <option>Birthday</option>
             <option>Anniversary</option>

@@ -21,12 +21,6 @@ function Nav() {
         <Link to="/booking" className="nav-link">
           Reservations
         </Link>
-        <Link to="/order-online" className="nav-link">
-          Order Online
-        </Link>
-        <Link to="/login" className="nav-link">
-          Login
-        </Link>
       </div>
     </nav>
   );

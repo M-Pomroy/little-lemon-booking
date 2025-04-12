@@ -8,7 +8,11 @@ const Booking = (props) => {
   return (
     <>
       <Hero />
-      <BookingForm times={props.times} dispatch={props.dispatch} />
+      <BookingForm
+        times={props.times}
+        dispatch={props.dispatch}
+        submitAPI={props.submitAPI}
+      />
       <Testimonials />
       <About />
     </>
