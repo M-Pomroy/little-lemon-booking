@@ -10,13 +10,15 @@ const About = ({ margin = false }) => {
           <h2>Little Lemon</h2>
           <p className="subtitle subtitle--small">Chicago</p>
           <p>
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-            sint. Velit officia consequat duis enim velit mollit. Exercitation
-            veniam consequat sunt nostrud amet.
+            Based in Chicago, Illinois, Little Lemon is a family-owned
+            Mediterranean restaurant, focused on traditional recipes served with
+            a modern twist.
           </p>
           <p>
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-            sint. Velit officia consequat duis enim velit mollit.
+            The chefs draw inspiration from Italian, Greek, and Turkish culture
+            and have a menu of 12–15 items that they rotate seasonally. The
+            restaurant has a rustic and relaxed atmosphere with moderate prices,
+            making it a popular place for a meal any time of the day.
           </p>
         </div>
         <div className="about-img-wrap">
