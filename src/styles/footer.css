@@ -21,13 +21,16 @@
   align-items: center;
 }
 
-.footer-menu ul {
+.footer-menu ul,
+.footer-menu-list {
   display: flex;
   flex-flow: column;
-  align-items: center;
   gap: 10px;
   margin: 0;
   padding: 0;
+}
+
+.footer-menu ul {
   list-style-type: none;
 }
 
