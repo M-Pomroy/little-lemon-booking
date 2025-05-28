@@ -1,18 +1,14 @@
 import "../styles/testimonial.css";
-import testimonial_img from "../assets/testimonial-img.jpg";
 
-const Testimonial = () => {
+const Testimonial = ({ img, rating, author, review }) => {
   return (
     <article className="testimonial">
-      <h3>5.0 Stars</h3>
+      <h3>{rating} Stars</h3>
       <div className="testimonial-author">
-        <img src={testimonial_img} alt="Jane Doe" />
-        <p>Jane Doe</p>
+        <img src={img} alt="Jane Doe" />
+        <p>{author}</p>
       </div>
-      <p>
-        Fantastic food, and the wait staff were great! We had a mix-up on the
-        mains but they sorted it no issue.
-      </p>
+      <p>{review}</p>
     </article>
   );
 };
