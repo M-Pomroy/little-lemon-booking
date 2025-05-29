@@ -31,4 +31,9 @@
   .specials-wrap {
     flex-flow: row;
   }
+
+  .specials-wrap .card {
+    flex: 0 0 auto;
+    width: calc((100% - 20px) / 3);
+  }
 }

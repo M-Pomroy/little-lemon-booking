@@ -6,11 +6,14 @@
 }
 
 .card img {
-  width: 100%;
   aspect-ratio: 265 / 185;
+  object-fit: cover;
 }
 
 .card-body {
+  flex: 1 1 auto;
+  display: flex;
+  flex-flow: column;
   background-color: #edefee;
   padding: 10px;
 }
@@ -44,6 +47,7 @@
   font-weight: 500;
   font-family: "karla", sans-serif;
   padding: 0;
+  margin-top: auto;
 }
 
 .order-btn img {
