@@ -86,7 +86,7 @@ const BookingForm = (props) => {
     <section className="section section-margin-top">
       <div className="container container--530 booking-wrap">
         <h2>Booking a table</h2>
-        <form className="form" onSubmit={handleSubmit} role="form">
+        <form className="form" onSubmit={handleSubmit}>
           <label htmlFor="resDate">Choose date</label>
           <input
             type="date"
