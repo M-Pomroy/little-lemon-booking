@@ -5,7 +5,7 @@ const Testimonial = ({ img, rating, author, review }) => {
     <article className="testimonial">
       <h3>{rating} Stars</h3>
       <div className="testimonial-author">
-        <img src={img} alt="Jane Doe" />
+        <img src={img} alt={author} />
         <p>{author}</p>
       </div>
       <p>{review}</p>
