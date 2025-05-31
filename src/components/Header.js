@@ -5,7 +5,7 @@ import "../styles/header.css";
 const Header = () => {
   return (
     <header className="header">
-      <div className="container header-wrap">
+      <div className="container container--860 header-wrap">
         <img src={logo} alt="Little Lemon logo" className="header-img" />
         <Nav />
       </div>
