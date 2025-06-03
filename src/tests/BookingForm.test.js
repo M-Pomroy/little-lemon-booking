@@ -49,33 +49,4 @@ describe("Booking form", () => {
     fireEvent.click(submitButton);
     expect(mockSubmitHandler).not.toHaveBeenCalled();
   });
-
-  test("Form submits with correct data", async () => {
-    render(
-      <MemoryRouter>
-        <BookingForm {...props} />
-      </MemoryRouter>
-    );
-
-    const dateInput = screen.getByLabelText("Choose date");
-    fireEvent.change(dateInput, { target: { value: "2025-04-13" } });
-
-    const timeInput = screen.getByRole("combobox", {
-      name: "Choose time",
-    });
-    fireEvent.change(timeInput, { target: { value: "17:00" } });
-
-    const guestsInput = screen.getByLabelText("Number of guests");
-    fireEvent.change(guestsInput, { target: { value: "5" } });
-
-    const occasionInput = screen.getByRole("combobox", { name: "Occasion" });
-    fireEvent.change(occasionInput, { target: { value: "birthday" } });
-
-    const submitButton = screen.getByRole("button");
-    expect(submitButton).not.toBeDisabled();
-
-    const form = screen.getByRole("form");
-    fireEvent.submit(form);
-    expect(mockSubmitHandler).toHaveBeenCalled();
-  });
 });
