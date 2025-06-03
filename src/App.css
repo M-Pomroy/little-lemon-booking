@@ -96,7 +96,7 @@ button {
   transition: all 200ms linear;
 }
 
-.btn:hover {
+.btn:hover:not(:disabled) {
   background-color: #ee9972;
 }
 
