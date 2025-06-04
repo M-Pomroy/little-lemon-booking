@@ -23,16 +23,24 @@ function Nav() {
           aria-label="Click to close menu"
           onClick={() => setNavOpen(false)}
         ></button>
-        <Link to="/" className="nav-link">
+        <Link to="/" className="nav-link" onClick={() => setNavOpen(false)}>
           Home
         </Link>
-        <Link to="/about" className="nav-link">
+        <Link
+          to="/about"
+          className="nav-link"
+          onClick={() => setNavOpen(false)}
+        >
           About
         </Link>
-        <Link to="/menu" className="nav-link">
+        <Link to="/menu" className="nav-link" onClick={() => setNavOpen(false)}>
           Menu
         </Link>
-        <Link to="/booking" className="nav-link">
+        <Link
+          to="/booking"
+          className="nav-link"
+          onClick={() => setNavOpen(false)}
+        >
           Reservations
         </Link>
       </div>
