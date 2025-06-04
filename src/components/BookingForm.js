@@ -21,7 +21,7 @@ const BookingForm = (props) => {
     const selectedDate = new Date(value);
     const selectedDatesDate = selectedDate.toDateString();
 
-    if (selectedDatesDate < todaysDate) {
+    if (selectedDatesDate !== todaysDate && selectedDate < today) {
       alert("Invalid date - please select a date in the future");
       setFormValues({ ...formValues, resDate: "" });
     } else {
