@@ -26,6 +26,7 @@
   display: flex;
   flex-flow: column;
   gap: 10px;
+  text-align: center;
   margin: 0;
   padding: 0;
 }
@@ -60,6 +61,11 @@
   .footer-wrap {
     flex-flow: row;
     align-items: center;
+  }
+
+  .footer-menu ul,
+  .footer-menu-list {
+    text-align: left;
   }
 }
 

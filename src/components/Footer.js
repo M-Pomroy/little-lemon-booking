@@ -9,7 +9,7 @@ const Footer = () => {
         <img src={logo} alt="Little Lemon logo" />
         <div className="footer-menu-wrap">
           <nav className="footer-menu">
-            <h2>Doormat Navigation</h2>
+            <h2>Navigation</h2>
             <div className="footer-menu-list">
               <Link to="/" className="footer-link">
                 Home
